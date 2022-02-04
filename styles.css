@@ -69,6 +69,7 @@ header .searchbar{
     font-size:1.6rem;
 }
 
+
 .searchbar input{
     font-size: 1.4rem;
     padding: 0 1.2rem;
@@ -113,4 +114,54 @@ header .searchbar{
 .action-container .icon ion-icon{
     font-size: 2.4rem;
 }
+
+.action-container .icon ion-icon:hover{
+    color:var(--primary);
+}
+
+main{
+    position: relative;
+    background:  linear-gradient(rgba(0 , 0 ,0 ,.6),rgba(0 , 0 ,0 , 0.7)) , url('./images/bg-image.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-overlay{
+    position:absolute;
+    color:var(--bg-white);
+    font-size: 5.6rem;
+    width:40%;
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    transition: animation 1s ease-in-out;
+    animation: text-overlay 1s ease-in-out;
+}
+
+.button-container{
+    cursor: pointer;
+    font-size:2.4rem;
+    width:max-content;
+    padding:.8rem 1.6rem;
+    margin:1.2rem auto;
+    color:var(--bg-white);
+    background-color:var(--primary);
+}
+
+@keyframes text-overlay {
+    0%{
+        top:100%;
+    }
+    100%{
+        top:30%;
+    }
+}
+
 
