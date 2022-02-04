@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="ClothNest is an e-commerce application designed for different range of clothes.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-
 
     <!-- Font -->
 
@@ -18,12 +16,11 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-
-    <title>Clothnest</title>
+    <title>Knight Store | Login</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 <body>
-    <!-- Header Component Start -->
-
     <header>
         <div class="brand-name">
             <a href="/">Clothnest</a>
@@ -37,10 +34,6 @@
         </div>
 
         <div class="action-container">
-            <button class="btn-login">
-                <a href="./components/login/login.html">Login</a>
-            </button>
-
             <span class="icon">
                 <ion-icon id="wishlist" name="heart-outline"></ion-icon>
                 <label for="wishlist">Wishlist</label>
@@ -52,19 +45,34 @@
             </span>
 
         </div>
-    </header>
+    </header>    
 
-    <!-- Header Component End -->
-
-    <!-- Main start -->
-
-    <main>
-        <div class="text-overlay">
-            A door towards your next Outfit.
-            <div class="button-container">
-                Shop Now
+    <div class="main">
+        <form class="login">
+            <h2 class="page-heading">Login</h2>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" placeholder="user@email.com" name="email" id="email">
             </div>
-        </div>
-    </main>
+
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" placeholder="password" name="password" id="password">
+            </div>
+
+            <label for="remember">
+                <input type="checkbox" name="remember" id="remember">
+                Remember Me
+            </label>
+            <button class="btn-login">Login</button>
+        </form>
+        <p class="redirection">
+            Don't have an account Yet? 
+            <a class="signUp" href="../signUp/signup.html">
+                SignUp!
+            </a>
+        </p>
+    </div>
+
 </body>
 </html>
