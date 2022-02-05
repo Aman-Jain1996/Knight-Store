@@ -47,7 +47,8 @@
         </div>
     </header>    
 
-    <div class="main">
+    <main>
+        <div class="main">
         <form class="login">
             <h2 class="page-heading">Login</h2>
             <div class="field">
@@ -57,7 +58,11 @@
 
             <div class="field">
                 <label for="password">Password</label>
-                <input type="password" placeholder="password" name="password" id="password">
+                <div class="password-field">
+                        <input type="password" placeholder="password" name="password" id="password">
+                        <ion-icon class="on" name="eye"></ion-icon>
+                        <ion-icon class="off" name="eye-off"></ion-icon>
+                    </div>
             </div>
 
             <label for="remember">
@@ -72,7 +77,8 @@
                 SignUp!
             </a>
         </p>
-    </div>
+        </div>
+    </main>
 
 </body>
 </html>
