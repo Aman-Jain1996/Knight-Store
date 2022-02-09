@@ -17,8 +17,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
     <title>Knight Store | SignUp</title>
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="./signUp.css">
+    <link rel="stylesheet" href="../auth.css">
 </head>
 <body>
     <header>
@@ -49,17 +48,21 @@
 
     <main>
         <div class="main">
-            <form class="login">
+            <form class="login signup-form">
                 <h2 class="page-heading">SignUp</h2>
                 <div class="field">
+                    <label for="email">Name</label>
+                    <input required type="text" placeholder="John Snow" name="email" id="email">
+                </div>
+                <div class="field">
                     <label for="email">Email Address</label>
-                    <input type="email" placeholder="user@email.com" name="email" id="email">
+                    <input required type="email" placeholder="user@email.com" name="email" id="email">
                 </div>
 
                 <div class="field">
                     <label for="password">Password</label>
                     <div class="password-field">
-                        <input type="password" placeholder="password" name="password" id="password">
+                        <input required type="password" placeholder="**************" name="password" id="password">
                         <ion-icon class="on" name="eye"></ion-icon>
                         <ion-icon class="off" name="eye-off"></ion-icon>
                     </div>
