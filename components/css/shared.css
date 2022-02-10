@@ -11,6 +11,7 @@
 
     --text-grey:#696e79;
     --text-greyDark : #3B404A;
+    --text-greyLight:#F7F7F7;
 
     --text-Dark:#1a1a1a;
 }
@@ -80,4 +81,10 @@ input{
 
 .btn{
     padding:1.2rem 2.4rem;
+}
+
+.horizontal-rule{
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    width:80%;
+    margin: 1.2rem 0;
 }

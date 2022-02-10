@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="ClothNest is an e-commerce application designed for different range of clothes.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <link href="https://knights-watch-ui.netlify.app/components/card/card.css" rel="stylesheet" type="text/css" /> 
+    
+    <link rel="stylesheet" href="./cart.css">
+    <title>Knight Store | Cart</title>
+
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;0,700;0,800;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- ion-icon -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="brand-name">
+            <a href="/">ClothNest</a>
+        </div>
+
+        <div class="searchbar">
+            <label for="search" class="icon">
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+            <input type="text" name="search" id="search" placeholder="Search for Products, brands and more....">
+        </div>
+
+        <div class="action-container">
+                <a class="btn-logout" href="./components/auth/login/login.html">Logout</a>
+
+            <span class="icon">
+                <a href="#">
+                    <ion-icon id="wishlist" name="heart-outline"></ion-icon>
+                    <label for="wishlist">Wishlist</label>
+                </a>
+            </span>
+            <span class="icon">
+                <a href="../cart/cart.html">
+                    <ion-icon id="cart" name="cart-outline"></ion-icon>
+                    <label for="cart">Cart</label>
+                </a>
+            </span>
+
+        </div>
+    </header>
+    
+    <h3 class="main-heading">
+        My Cart (2)
+    </h3>
+    <main>
+        <section class="cart">
+            <div class="product">
+                <div class="product-img">
+                    <img src="../../images/product1.jpg" alt="product image">
+                </div>
+                <div class="product-content">
+                    <h4 class="product-name">Demo Product</h4>
+                    <div class="price">
+                        <p class="sell-price">₹ 449</p>
+                        <p class="cost-price">₹ 899</p>
+                    </div>
+                    <div class="discount">50% off</div>
+                    <div class="quantity">
+                        <label >Quantity:</label>
+                        <div>
+                            <div class="plus">+</div>
+                            <div class="quantity">1</div>
+                            <div class="minus">-</div>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn">Remove from Cart</button>
+                        <button class="btn btn-tertiary">Add to Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-img">
+                    <img src="../../images/product1.jpg" alt="product image">
+                </div>
+                <div class="product-content">
+                    <h4 class="product-name">Demo Product 2</h4>
+                    <div class="price">
+                        <p class="sell-price">₹ 449</p>
+                        <p class="cost-price">₹ 899</p>
+                    </div>
+                    <div class="discount">50% off</div>
+                    <div class="quantity">
+                        <label >Quantity:</label>
+                        <div>
+                            <div class="plus">+</div>
+                            <div class="quantity">1</div>
+                            <div class="minus">-</div>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn">Remove from Cart</button>
+                        <button class="btn btn-tertiary">Add to Wishlist</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <aside class="cart-summary">
+            <h3 class="summary-heading">
+                Cart Summary
+            </h3>
+
+            <div class="horizontal-rule"></div>
+            <div class="pricing-details">
+                <div class="summary-items">
+                    <label for="">Price (2 items)</label>
+                    <p>₹ 1798</p>
+                </div>
+                <div class="summary-items">
+                    <label for="">Total Discount</label>
+                    <p>- ₹ 899</p>
+                </div>
+                <div class="summary-items">
+                    <label for="">Delivery Charges</label>
+                    <p>+ ₹ 499</p>
+                </div>
+            </div>
+
+            <div class="horizontal-rule"></div>
+
+            <div class="final-amount">
+                <div class="summary-items">
+                    <label for="">Total Amount</label>
+                    <p>₹ 1398</p>
+                </div>
+
+                <p class="savings"> Congrats ! You have saved ₹ 899 on this order </p>
+            </div>
+
+            <div class="horizontal-rule"></div>
+
+            <button class="btn btn-primary">Place Order</button>
+
+        </aside>
+    </main>
+</body>
+</html>

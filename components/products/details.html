@@ -6,7 +6,7 @@
     <meta name="description" content="ClothNest is an e-commerce application designed for different range of clothes.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-     <link href="https://knights-watch-ui.netlify.app/components/card/card.css" rel="stylesheet" type="text/css" /> 
+     <link href="https://knights-watch-ui.netlify.app/components/button/button.css" rel="stylesheet" type="text/css" /> 
     
     <link rel="stylesheet" href="./details.css">
     <title>Knight Store | Product Details</title>
@@ -41,12 +41,16 @@
                 <a class="btn-logout" href="./components/auth/login/login.html">Logout</a>
 
             <span class="icon">
-                <ion-icon id="wishlist" name="heart-outline"></ion-icon>
-                <label for="wishlist">Wishlist</label>
+                <a href="#">
+                    <ion-icon id="wishlist" name="heart-outline"></ion-icon>
+                    <label for="wishlist">Wishlist</label>
+                </a>
             </span>
             <span class="icon">
-                <ion-icon id="cart" name="cart-outline"></ion-icon>
-                <label for="cart">Cart</label>
+                <a href="../cart/cart.html">
+                    <ion-icon id="cart" name="cart-outline"></ion-icon>
+                    <label for="cart">Cart</label>
+                </a>
             </span>
 
         </div>
