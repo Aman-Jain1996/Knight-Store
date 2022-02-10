@@ -51,6 +51,7 @@ main{
     flex-direction: column;
     padding:.6rem 1.2rem;
     gap:1.2rem;
+    margin-bottom:1.2rem;
 }
 
 .card .action-container .btn{
