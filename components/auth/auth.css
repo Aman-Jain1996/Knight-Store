@@ -107,3 +107,31 @@ label[for='remember']{
 }
 
 
+/* Media Queries */
+
+/* 960px */
+
+@media screen and (max-width: 960px) {
+
+    .main{
+        margin:2.4rem 0;
+        width:40%;
+    }
+    
+}
+
+/* 792px */
+
+@media screen and (max-width: 792px) {
+
+    .page-heading{
+        font-size:3rem;
+    }
+
+    .main{
+        margin:2.4rem 0;
+        width:50%;
+    }
+
+}
+

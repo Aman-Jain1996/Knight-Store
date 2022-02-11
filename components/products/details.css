@@ -110,3 +110,48 @@ main{
 .wish-icon:hover{
     transform: scale(1.2);
 }
+
+/* media queries */ 
+
+/* 960px */
+
+@media screen and (max-width: 960px) {
+
+    .product-details{
+        padding:3.6rem .6rem;
+    }
+
+    .button-container{
+        flex-direction: column;
+    }
+
+    .button-container > *{
+        width:80%;
+    }
+
+    
+}
+
+/* 792px */
+
+@media screen and (max-width: 792px) {
+
+    .product-details{
+        padding:3.6rem .6rem;
+        width:90%;
+    }
+
+    .product-details .content{
+        padding: 1.2rem 2.4rem;
+    }
+
+    .product-name{
+        font-size: 2.4rem;
+    }
+
+    .product-details div:first-child {
+        padding: 2.4rem;
+    }
+
+
+}

@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap');
 @import url('./components/css/shared.css');
 @import url('./components/css/header.css');
 
 /* Main-header on login page */
 
 .main{
-    background:  linear-gradient(rgba(0 , 0 ,0 ,.4),rgba(0 , 0 ,0 , 0.8)) , url('./images/bg-image.webp') ;
+    background:  linear-gradient(rgba(0 , 0 ,0 ,.5),rgba(0 , 0 ,0 , 0.9)) , url('./images/bg-image.webp') ;
     background-position: center;
     object-fit: contain;
     background-size:cover;
@@ -15,6 +16,9 @@
 
 .text-overlay{
     position: absolute;
+    font-family: 'Ubuntu',sans-serif;
+    line-height: 1.5em;
+    letter-spacing:2px;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -133,6 +137,7 @@ section{
 .categories{
     display: flex;
     justify-content:space-around;
+    flex-wrap: wrap;
     margin:4.8rem auto;
     width:95%;
 }
@@ -220,3 +225,65 @@ section{
     transform: translateY(-1rem);
     box-shadow: 0 0px 5px  rgba(0,0,0,.5);
 }
+
+
+/* Media queries  */
+
+/* 960px */
+
+@media screen and (max-width: 960px) {
+    
+    .text-overlay{
+        width:60%;
+        font-family: 'Ubuntu',sans-serif;
+    }
+
+    .arrivals{
+        width:90%;
+    }
+
+    .content-subheading{
+        font-size:1.6rem;
+    }
+
+    .categories{
+        align-content: space-around;
+        height:50rem;
+    }
+
+    .category-article{
+        flex:0 1 30%;
+    }
+
+}
+
+/* 792px */
+
+@media screen and (max-width: 792px) {
+    
+    .text-overlay{
+        font-size:4.8rem;
+        font-family: 'Ubuntu',sans-serif;
+    }
+
+    .arrivals > * .arrival-image{
+        padding:1.2rem;
+    }
+
+
+    .arrival-content{
+        padding:2.4rem 1.2rem;
+    }
+
+    .content-heading{
+        font-family: 'Nunito Sans',sans-serif;
+        font-size:1.4rem;
+        margin-bottom:1.2rem;
+    }
+
+    .categories{
+        margin:2rem auto;
+    }
+
+}
+

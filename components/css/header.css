@@ -94,3 +94,20 @@ header .searchbar{
 .action-container .icon ion-icon:hover{
     color:var(--primary);
 }
+
+
+/* media queries */
+
+/* 792px */
+
+@media screen and (max-width: 792px) {
+    
+    header{
+        padding:2.4rem;
+    }
+
+    .action-container .btn-logout{
+        margin:0;
+    }
+
+}

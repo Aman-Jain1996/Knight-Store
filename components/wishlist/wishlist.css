@@ -70,5 +70,26 @@ main{
 }
 
 
+/* Media Queries */
+
+/* 960px */
+
+@media screen and (max-width: 960px) {
+
+    .product-menu{
+        grid : auto / repeat(3 , minmax(20rem , 25rem));
+    }
+   
+}
+
+/* 792px */
+
+@media screen and (max-width: 792px) {
+
+    .product-menu{
+        grid : auto / repeat(2 , minmax(20rem , 25rem));
+    }
+
+}
 
 
