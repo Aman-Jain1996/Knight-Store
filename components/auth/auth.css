@@ -2,7 +2,7 @@
 @import url('../css/shared.css');
 
 main{
-    background: linear-gradient(rgba(0 , 0 ,0 ,.4),rgba(0 , 0 ,0 , 0.8)) ,url(../../images/login-bg.jpg) ;
+    background: linear-gradient(rgba(0 , 0 ,0 ,.4),rgba(0 , 0 ,0 , 0.8)) ,url(../../images/login-bg.webp) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
