@@ -1,6 +1,7 @@
 @import url('../css/header.css');
 @import url('../css/shared.css');
 
+
 main{
     display:flex;
 }
@@ -35,8 +36,38 @@ main{
     font-weight: 600;
 }
 
+input[type="range"]{
+    padding:1.2rem 0;
+    width:100%;
+}
+
 .submenu-content{
     padding: 8px;
+}
+
+.price-range{
+    position: relative;
+    padding-bottom: 0;
+}
+
+.min-price{
+    position: absolute;
+    margin-top:3px;
+    top:-1%;
+}
+
+.mid-price{
+    position: absolute;
+    top:-3%;
+    margin-top:3px;
+    left:60%;
+}
+
+.max-price{
+    position: absolute;
+    top:-3%;
+    margin-top:3px;
+    right:-2%;
 }
 
 .submenu-content .field{

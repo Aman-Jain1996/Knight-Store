@@ -88,3 +88,13 @@ input{
     width:80%;
     margin: 1.2rem 0;
 }
+
+.btn-tertiary{
+    background-color:transparent;
+    color:#000;
+    border:1px solid var(--text-greyDark);
+}
+
+.btn-tertiary:hover{
+    border:1px solid #000;
+}
