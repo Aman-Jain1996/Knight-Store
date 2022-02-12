@@ -1,0 +1,174 @@
+@import url('../css/header.css');
+@import url('../css/shared.css');
+
+
+main{
+    margin: 2.4rem 2.4rem 0;
+    min-height:70vh;
+    padding:1.2rem;
+    display:flex;
+    justify-content: space-around;
+}
+
+.main-heading{
+    text-align:center;
+    margin-top:2.4rem;
+    font-size:2rem;
+    text-transform:uppercase;
+}
+
+.cart{
+    flex: 0 1 65%;
+    padding:1.2rem 2.4rem ;
+    display:grid;
+    row-gap:4.8rem;
+    grid-template-columns: minmax(30% , 60%);
+    grid-template-rows: minmax(15rem,25rem);
+    justify-content:space-around;
+}
+
+.product{
+    display:flex;
+    border-radius:6px;
+    overflow:hidden;
+    box-shadow: 0 0 5px 0px rgba(0,0,0,.2);
+}
+
+.product-img{
+    flex:0 1 40%;
+}
+
+.product-content{
+    flex: 0 1 60%;
+    padding:1.2rem 3.6rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.product-name{
+    font-size:1.8rem;
+    color:#000;
+    font-weight: 500;
+    margin-bottom:1.2rem;
+}
+
+.price{
+    display:flex;
+    align-items:center;
+    font-size:1.4rem;
+    margin-bottom:.6rem;
+}
+
+.sell-price{
+    font-weight: 800;
+    font-family: 'Nunito Sans',sans-serif;
+    color:#000;
+}
+
+.cost-price{
+    padding: 0 1.2rem;
+    text-decoration: line-through;
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+.discount{
+    font-size: 1.4rem;
+    font-weight: 800;
+    color:var(--text-grey);
+    margin-bottom:1.2rem;
+}
+
+.quantity{
+    width:60%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.quantity > div{
+    display: flex;
+}
+
+.btn-container{
+    gap:1.2rem;
+    padding:2.4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+
+.btn{
+    width:100%;
+    padding:.5rem 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-tertiary{
+    background-color:transparent;
+    color:#000;
+    border:1px solid var(--text-greyDark);
+}
+
+.btn:hover{
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.btn-tertiary:hover{
+    border:1px solid #000;
+}
+
+
+/* Cart Summary styling */
+
+.cart-summary{
+    padding:1.2rem 2.4rem;
+    flex: 0 1 30%;
+    height:max-content;
+    background: var(--text-greyLight);
+    border-radius: 5px;
+    box-shadow: 0 0 12px 2px rgba(0,0,0,.1);
+}
+
+.horizontal-rule{
+    width:100%;
+
+}
+
+.summary-heading{
+    font-size: 1.6rem;
+    text-align:center;
+    font-family: 'Nunito Sans' ,sans-serif;
+    font-weight: 800;
+    color:#000;
+}
+
+.summary-items{
+    display: flex;
+    justify-content:space-between;
+    color:#000;
+    font-weight:600;
+    font-size:1.2rem;
+    margin:1.2rem .6rem;
+}
+
+.final-amount{
+    display: flex;
+    flex-direction: column;
+}
+
+.final-amount .summary-items{
+    font-size: 1.4rem;
+}
+
+.savings{
+    margin-left:auto;
+}
+
+.btn-primary{
+    margin:1.2rem 0;
+    background-color:var(--primary);
+}
+
+
+
