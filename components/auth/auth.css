@@ -135,3 +135,39 @@ label[for='remember']{
 
 }
 
+/* 650px */
+
+@media screen and (max-width: 650px) {
+
+    .main{
+        margin:2.4rem 0;
+        width:80%;
+    }
+
+}
+
+/* 650px */
+
+@media screen and (max-width: 650px) {
+
+    header{
+        flex-wrap: nowrap;
+    }
+
+    .action-container-icon{
+        width:max-content;
+        margin:initial;
+        justify-content:initial;
+    }
+
+    .main{
+        width:90%;
+    }
+
+    .main .login{
+        width:100%;
+        padding:0;
+    }
+
+}
+

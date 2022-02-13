@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700,,800,900&display=swap');
 @import url('./components/css/shared.css');
 @import url('./components/css/header.css');
 
@@ -128,7 +128,7 @@ section{
     font-size: 2.4rem;
     font-family: 'Nunito Sans',sans-serif;
     margin-left:4.8rem;
-    font-size:400;
+    font-weight:700;
 }
 
 
@@ -263,7 +263,6 @@ section{
     
     .text-overlay{
         font-size:4.8rem;
-        font-family: 'Ubuntu',sans-serif;
     }
 
     .arrivals > * .arrival-image{
@@ -287,3 +286,121 @@ section{
 
 }
 
+/* 650px */
+
+@media screen and (max-width: 650px) {
+
+    .text-overlay{
+        width:80%;
+        font-size:3.6rem;
+        font-weight:900;
+    }
+
+    .shop-btn{
+        margin-top: 1.4rem;
+    }
+
+    .btn-text{
+        font-size: 2.4rem;
+    }
+
+    .button{
+        width:24rem;
+    }
+
+    .btn-bg{
+        height:4rem;
+        width:4rem;
+    }
+
+    .arrowline-1{
+        width:2rem;
+        transform:translateX(-5px);
+    }
+
+    .arrowline-2{
+        width:1rem;
+    }
+
+    .arrowline-3{
+        width:1rem;
+    }
+
+    section{
+        margin:4.8rem auto;
+    }
+
+    .section-heading{
+        margin-left:3.6rem;
+    }
+
+    .arrivals > *{
+        flex-direction: column;
+        justify-content:space-between;
+        min-height:32rem;
+    }
+
+    .arrivals > * .arrival-image{
+        flex:0 1 auto;
+        height:20rem;
+        padding:1.2rem;
+    }
+
+    .arrivals > * .arrival-content{
+        flex:0 1 40%;
+        padding:2.4rem 1.2rem;
+    }
+
+    .content-heading{
+        display: none;
+    }
+
+    .categories{
+        width:100%;
+    }
+
+    .category-overlay{
+        text-align: center;
+    }
+
+}
+
+
+/* 450px */
+
+@media screen and (max-width: 450px) {
+
+    .text-overlay{
+        width:90%;
+    }
+
+    header .brand-name{
+        font-size: 3.6rem;
+        margin-bottom: 1.2rem;
+        width:100%;
+        justify-content:center;
+    }
+
+    .categories{
+        height:max-content;
+        gap:2.4rem;
+    }
+
+    section{
+        margin: 5.6rem auto;
+    }
+
+    .category-article{
+        flex: 0 1 45%;
+    }
+
+    .section-heading{
+        margin-left: 1.2rem;
+    }
+
+    .arrivals{
+        flex-direction: column;
+        gap:3.6rem;
+    }
+
+}
