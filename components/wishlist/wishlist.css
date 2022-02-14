@@ -70,5 +70,52 @@ main{
 }
 
 
+/* Media Queries */
 
+/* 960px */
+
+@media screen and (max-width: 960px) {
+
+    .product-menu{
+        grid : auto / repeat(3 , minmax(20rem , 25rem));
+    }
+   
+}
+
+/* 792px */
+
+@media screen and (max-width: 792px) {
+
+    .product-menu{
+        grid : auto / repeat(2 , minmax(20rem , 25rem));
+    }
+
+}
+
+/* 650px */
+
+@media screen and (max-width: 650px) {
+    .card{
+        width:95%;
+    }
+
+}
+
+
+/* 450px */
+
+@media screen and (max-width: 450px) {
+
+     header .brand-name{
+        font-size: 3.6rem;
+        margin-bottom: 1.2rem;
+        width:100%;
+        justify-content:center;
+    }
+
+    .product-menu{
+        grid-template-columns: 1fr;
+    }
+
+}
 

@@ -2,7 +2,7 @@
 @import url('../css/shared.css');
 
 main{
-    background: linear-gradient(rgba(0 , 0 ,0 ,.4),rgba(0 , 0 ,0 , 0.8)) ,url(../../images/login-bg.jpg) ;
+    background: linear-gradient(rgba(0 , 0 ,0 ,.4),rgba(0 , 0 ,0 , 0.8)) ,url(../../images/login-bg.webp) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -106,4 +106,68 @@ label[for='remember']{
     margin: .6rem 0;
 }
 
+
+/* Media Queries */
+
+/* 960px */
+
+@media screen and (max-width: 960px) {
+
+    .main{
+        margin:2.4rem 0;
+        width:40%;
+    }
+    
+}
+
+/* 792px */
+
+@media screen and (max-width: 792px) {
+
+    .page-heading{
+        font-size:3rem;
+    }
+
+    .main{
+        margin:2.4rem 0;
+        width:50%;
+    }
+
+}
+
+/* 650px */
+
+@media screen and (max-width: 650px) {
+
+    .main{
+        margin:2.4rem 0;
+        width:80%;
+    }
+
+}
+
+/* 650px */
+
+@media screen and (max-width: 650px) {
+
+    header{
+        flex-wrap: nowrap;
+    }
+
+    .action-container-icon{
+        width:max-content;
+        margin:initial;
+        justify-content:initial;
+    }
+
+    .main{
+        width:90%;
+    }
+
+    .main .login{
+        width:100%;
+        padding:0;
+    }
+
+}
 
